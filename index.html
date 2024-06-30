@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/4b7f643936.js" crossorigin="anonymous"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="stats-container">
+            <div class="row-container">
+            <div class="details">
+                <h2 style="text-transform: uppercase;">Todo list</h2>
+                <p>Progress: </p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            
+            <div class="stats-numbers">
+                <p id="numbers"> 0 / 0</p>
+            </div>
+        </div>
+        <div class="row-container">
+        <form action="">
+            <input type="text" placeholder="Enter task" id="taskInput">
+            <select id="priorityInput" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <input type="date" id="deadlineInput" placeholder="Deadline" required>
+            <button type="submit" id="newTask"> Add task </button>
+        </form>
+    </div>
+        </div>
+         
+        <ul id="task-list">
+
+        </ul>
+    </div>
+    <button id="themeToggle"><i class="fa-solid fa-palette"></i></button>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
